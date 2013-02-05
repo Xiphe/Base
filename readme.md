@@ -9,8 +9,6 @@ Provides singleton, configuration, callback and basic api methods.
 Changelog
 ---------
 
-# 1.0.3
-+ remove vendor folder from src.
 
 
 Todo
