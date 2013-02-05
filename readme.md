@@ -9,8 +9,8 @@ Provides singleton, configuration, callback and basic api methods.
 Changelog
 ---------
 
-# 1.0.2
-+ move the class file in root folder.
+# 1.0.3
++ remove vendor folder from src.
 
 
 Todo
