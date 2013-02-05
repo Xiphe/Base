@@ -9,6 +9,9 @@ Provides singleton, configuration, callback and basic api methods.
 Changelog
 ---------
 
+# 1.0.2
++ move the class file in root folder.
+
 
 Todo
 ----
