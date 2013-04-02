@@ -193,11 +193,15 @@ class Base {
      */
     public function mergeConfig($new = array())
     {
-        $this->_configuration = (object) array_merge(
+        $config = (object) array_merge(
             (array) $this->_defaultConfiguration,
             (array) $this->_configuration,
             (array) $new
         );
+
+        foreach ($config as $key => $value) {
+            $this->setConfig($key, $value);
+        }
 
         return $this;
     }
