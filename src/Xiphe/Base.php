@@ -137,8 +137,20 @@ class Base {
             return $inst;
         }
 
-
         return new $class($initArgs);
+    }
+
+    /**
+     * Destroy a potential singleton instance of the called class.
+     * 
+     * @return null
+     */
+    public static function destroySingleton()
+    {
+        $class = get_called_class();
+        if (!empty(self::$_baseInstances[$class])) {
+            unset(self::$_baseInstances[$class]);
+        }
     }
 
     /**
